@@ -79,7 +79,7 @@ module Gimli
       # Load standard stylesheet
       style = ::File.expand_path("../../../config/style.css", __FILE__)
       @stylesheets << style
-      @stylesheets << stylesheet if ::File.exists?(stylesheet)
+      @stylesheets << stylesheet if ::File.exist?(stylesheet)
     end
 
     def append_stylesheets(html)
