@@ -15,7 +15,7 @@ module Gimli
       extension = ::File.extname(@filename)
       @format = load_format(extension)
       @name = ::File.basename(@filename, extension)
-      @data = ::File.open(@filename, 'rb') { |f| f.read } if valid? && ::File.exists?(@filename)
+      @data = ::File.open(@filename, 'rb') { |f| f.read } if valid? && ::File.exist?(@filename)
     end
 
     # Is the file valid
