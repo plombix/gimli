@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'RedCloth', '~> 4.2.7'
 
   s.add_dependency 'coderay', '~> 1.1'
-  s.add_dependency 'nokogiri', '~> 1.8.0'
+  s.add_dependency 'nokogiri' ,'~> 1.16'
 
   s.add_dependency 'wkhtmltopdf-binary', '~> 0.12.3'
   s.add_dependency 'optiflag', '~> 0.7'
